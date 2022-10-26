@@ -1,13 +1,12 @@
-import java.security.KeyStore;
 import java.util.*;
 import java.util.Arrays;
 import java.util.List;
 public class Main {
-    private static Map<String, List<Integer>> task=new HashMap<>();
-    private static Map<String, Integer> task1=new HashMap<>();
+    private static  Map<String, List<Integer>> task=new HashMap<>();
+    private static  Map<String, Integer> task1=new HashMap<>();
 
     private static Random random=new Random();
-    private static String summa;
+
 
     public static void main(String[] args) {
 //        Создайте Map<String, List<Integer>>. Заполните ее 5 элементами, где ключ — произвольное значение,
@@ -55,13 +54,13 @@ public class Main {
 
     private static void printNewtMap(Map<String, Integer> map) {
         for (Map.Entry<String, Integer> pair: map.entrySet()) {
-            System.out.println(String.format(pair.getKey()+pair.getValue()));
+            System.out.println(pair.getKey()+pair.getValue());
         }
 
     }
     private static void printOldtMap(Map<String, List<Integer>> map) {
         for (Map.Entry<String, List<Integer>> pair: map.entrySet()) {
-            System.out.println(String.format(pair.getKey()+"->"+pair.getValue()));
+            System.out.println(pair.getKey()+"->"+pair.getValue());
         }
 
     }
